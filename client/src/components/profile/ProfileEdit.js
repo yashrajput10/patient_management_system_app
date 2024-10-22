@@ -53,7 +53,7 @@ const ProfileEdit = () => {
     setErrorMessage("");
     try {
       const response = await axios.patch(
-        'http://localhost:5000/admin/update',
+        'http://localhost:8000/admin/update',
         profileData,
         { withCredentials: true }
       );
