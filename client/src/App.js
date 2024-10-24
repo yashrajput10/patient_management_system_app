@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { ToastContainer } from 'react-toastify'; // Import ToastContainer and toast
 import 'react-toastify/dist/ReactToastify.css';
@@ -20,6 +20,10 @@ import PatientSignup from './components/auth/Patient/PatientSignup';
 import DoctorLogin from './components/auth/Doctor/DoctorLogin';
 import AdminSignup from './components/auth/Admin/AdminSignup';
 import PatientLogin from './components/auth/Patient/PatientLogin';
+import Reportingandanalytics from './components/Dashboard/Reportingandanalytics';
+import Monitorbilling from './components/Dashboard/Monitorbilling';
+
+
 
 
 
@@ -29,29 +33,30 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' Component={AdminLogin} />
-          <Route path="/patient/signup" element={<PatientSignup />} />
-          <Route path="/patient/login" element={<PatientLogin />} />
+          <Route path="/patient/signup" element={PatientSignup} />
+          <Route path="/patient/login" element={PatientLogin} />
           
-          <Route path="/doctor/login" element={<DoctorLogin />} />
+          <Route path="/doctor/login" element={DoctorLogin} />
 
-          <Route path="/admin/login" element={<AdminLogin />} />
-          <Route path="/admin/signup" element={<AdminSignup />} />
+          <Route path="/admin/login" element={AdminLogin} />
+          <Route path="/admin/signup" element={AdminSignup} />
 
-          <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/otp-verification" element={<Otp />} />
+          <Route path="/forgot-password" element={ForgotPassword} />
+          <Route path="/otp-verification" element={Otp} />
           
           <Route path='userprofile' Component={UserProfile} />    
           <Route path='Profile/chnagepassword' Component={ProfileChnagepassword} />    
           <Route path='Profile/termsandconditions' Component={TermsAndCondition} />    
           <Route path='Profile/privacypolicy' Component={PrivacyPolicy} />    
 
-          <Route path='dashboard' Component={Dashboard}/>
-          <Route path='doctordashboard' Component={DoctorDashboard}/>
-          <Route path='patientdashboard' Component={PatientDashboard}/>
-          <Route path='doctormanagement'  Component={DoctorManagement}/>
-          <Route  path='adddoctor' Component={AddDoctor} />
-
-
+          <Route path='/dashboard' Component={Dashboard}/>
+          <Route path='/doctordashboard' Component={DoctorDashboard}/>
+          <Route path='/patientdashboard' Component={PatientDashboard}/>
+          <Route path='/doctormanagement'  Component={DoctorManagement}/>
+          <Route  path='/adddoctor' Component={AddDoctor} />
+          <Route  path='/reportingandanalytics' Component={Reportingandanalytics} />
+          <Route  path='/monitorbilling' element={Monitorbilling} />
+          <Route  path='/adddoctor' element={AddDoctor} />
         </Routes>
         <ToastContainer />
       </BrowserRouter>

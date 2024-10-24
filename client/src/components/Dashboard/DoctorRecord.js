@@ -39,39 +39,39 @@ export default function DoctorRecord() {
                 <tbody>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            Apple MacBook Pro 17"
+                            abcd
                         </th>
                         <td class="px-6 py-4">
-                            Silver
+                            fiver
                         </td>
                         <td class="px-6 py-4">
-                            Laptop
+                            kantu
                         </td>
                         <td class="px-6 py-4">
-                            $2999
+                            buffb
                         </td>
                         <td class="px-6 py-4 text-bold">
-                            <div className="bg-[#F6F8FB] text-[#718EBF] rounded-3xl d-flex align-items-center justify-content-center" style={{width:"70px",height:"30px",fontWeight:"500"}}>$2999</div>
+                            <div className="bg-[#F6F8FB] text-[#718EBF] rounded-3xl d-flex align-items-center justify-content-center" style={{ width: "70px", height: "30px", fontWeight: "500" }}>online</div>
                         </td>
                         <td class="px-6 py-4 text-bold">
-                            <div className="bg-[#F6F8FB] text-[#718EBF] rounded-3xl d-flex align-items-center justify-content-center" style={{width:"70px",height:"30px",fontWeight:"500"}}>$2999</div>
+                            <div className="bg-[#F6F8FB] text-[#718EBF] rounded-3xl d-flex align-items-center justify-content-center" style={{ width: "70px", height: "30px", fontWeight: "500" }}>$5255</div>
                         </td>
                         <td class="px-6 py-4 text-bold">
-                            <div className="bg-[#F6F8FB] text-[#718EBF] rounded-3xl d-flex align-items-center justify-content-center" style={{width:"70px",height:"30px",fontWeight:"500"}}>$2999</div>
+                            <div className="bg-[#F6F8FB] text-[#718EBF] rounded-3xl d-flex align-items-center justify-content-center" style={{ width: "70px", height: "30px", fontWeight: "500" }}>$2999</div>
                         </td>
                         <td class="px-6 py-4 text-bold d-flex gap-2">
                             <div className="d-flex align-items-center justify-content-center">
-                            <MdEditSquare className="text-[#39973D] fs-5"/>
+                                <MdEditSquare className="text-[#39973D] fs-5" />
                             </div>
                             <div className="d-flex align-items-center justify-content-center">
-                            <MdRemoveRedEye className="text-[#0EABEB] fs-5"/>
+                                <MdRemoveRedEye className="text-[#0EABEB] fs-5" />
                             </div>
                             <div className="d-flex align-items-center justify-content-center">
-                            <RiDeleteBin3Fill className="text-[#E11D29] fs-5"/>
+                                <RiDeleteBin3Fill className="text-[#E11D29] fs-5" />
                             </div>
                         </td>
                     </tr>
-                   
+
                 </tbody>
             </table>
 

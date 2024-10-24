@@ -21,19 +21,3 @@ export default function BillingPayments() {
     </div>
   );
 }
-
-
-// <ul>
-//       <li className="flex justify-between p-2">
-//         <span>Charlie Vaccaro (Colds and Flu)</span>
-//         <span className="text-green-500">Paid</span>
-//       </li>
-//       <li className="flex justify-between p-2">
-//         <span>James George (Conjunctivitis)</span>
-//         <span className="text-red-500">Unpaid</span>
-//       </li>
-//       <li className="flex justify-between p-2">
-//         <span>James George (Conjunctivitis)</span>
-//         <span className="text-red-500">Unpaid</span>
-//       </li>
-//     </ul>

@@ -42,16 +42,3 @@ export default function AppointmentsList() {
     );
   }
   
-
-  // {appointments.length > 0 ? (
-  //   <ul className="text-left">
-  //     {appointments.map((appointment) => (
-  //       <li key={appointment.id} className="mb-3">
-  //         <span className="font-semibold">{appointment.patientName}</span> -{' '}
-  //         {appointment.time} with {appointment.doctor}
-  //       </li>
-  //     ))}
-  //   </ul>
-  // ) : (
-  //   <p>No Appointments Found Yet</p>
-  // )}
