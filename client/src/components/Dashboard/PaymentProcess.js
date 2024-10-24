@@ -7,6 +7,7 @@ import { IoClose } from 'react-icons/io5';
 import MonitorBill from '../images/monitor bill.png';
 import { Modal } from 'react-bootstrap';
 import { Grid2, MenuItem, TextField } from '@mui/material';
+import Sidebar from './Sidebar';
 
 const PaymentProcess = () => {
 
@@ -25,7 +26,7 @@ const PaymentProcess = () => {
         setCreateVisible(!isCreateVisible)
     }
 
-    const openDetailDialog = (patient) => {
+    const openDetailDialog = (patient) => { 
         setSelectedPatient(patient);
         setDetailDialogOpen(true);
     };
@@ -48,13 +49,11 @@ const PaymentProcess = () => {
 
     return (
         <div className="flex h-screen">
+            <Sidebar/>
             <div className="flex-grow bg-gray-100 overflow-auto">
                 <div className="sticky top-0 z-10">
                     <Navbar />
                 </div>
-
-
-
                 <div className="gap-3 mt-6 px-6 mb-6 overflow-auto">
 
                     {isCreateVisible && (
@@ -611,19 +610,19 @@ const PaymentProcess = () => {
                                             <div className="bg-[#F6F8FB] text-[#718EBF] rounded-3xl d-flex align-items-center justify-content-center" style={{ width: "70px", height: "30px", fontWeight: "500" }}>5654</div>
                                         </td>
                                         <td className="px-6 py-2">
-                                            Alfredo Vaccaro
+                                            abcd 
                                         </td>
                                         <td className="px-6 py-2">
-                                            Colds and Flu
+                                             Flu
                                         </td>
                                         <td className="px-6 py-2">
-                                            879934 43456
+                                           1234567893
                                         </td>
                                         <td className="px-6 py-2 text-bold">
                                             <div className="bg-[#EBF5EC] text-[#39973D] rounded-3xl d-flex align-items-center justify-content-center" style={{ width: "70px", height: "30px", fontWeight: "500" }}>Paid</div>
                                         </td>
                                         <td className="px-6 py-2">
-                                            2 jan, 2022
+                                            10 oct, 2024
                                         </td>
                                         <td className="px-6 py-2 text-bold">
                                             <div className="bg-[#F6F8FB] text-[#718EBF] rounded-3xl d-flex align-items-center justify-content-center" style={{ width: "70px", height: "30px", fontWeight: "500" }}>4:30 PM</div>
@@ -647,19 +646,19 @@ const PaymentProcess = () => {
                                             <div className="bg-[#F6F8FB] text-[#718EBF] rounded-3xl d-flex align-items-center justify-content-center" style={{ width: "70px", height: "30px", fontWeight: "500" }}>5654</div>
                                         </td>
                                         <td className="px-6 py-2">
-                                            Alfredo Vaccaro
+                                            abcd
                                         </td>
                                         <td className="px-6 py-2">
-                                            Colds and Flu
+                                            Colds 
                                         </td>
                                         <td className="px-6 py-2">
-                                            879934 43456
+                                           1234567890
                                         </td>
                                         <td className="px-6 py-2 text-bold">
                                             <div className="bg-[#FCE8EA] text-[#E11D29] rounded-3xl d-flex align-items-center justify-content-center" style={{ width: "70px", height: "30px", fontWeight: "500" }}>Unpaid</div>
                                         </td>
                                         <td className="px-6 py-2">
-                                            2 jan, 2022
+                                            11 oct, 2024
                                         </td>
                                         <td className="px-6 py-2 text-bold">
                                             <div className="bg-[#F6F8FB] text-[#718EBF] rounded-3xl d-flex align-items-center justify-content-center" style={{ width: "70px", height: "30px", fontWeight: "500" }}>4:30 PM</div>

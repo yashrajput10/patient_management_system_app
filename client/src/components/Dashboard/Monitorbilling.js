@@ -8,6 +8,7 @@ import { AiFillPlusSquare } from 'react-icons/ai';
 import { IoClose } from 'react-icons/io5';
 import MonitorBill from '../images/monitor bill.png';
 import editinvoice from '../images/Edit Invoice.png'
+import Sidebar from './Sidebar';
 
 const Monitorbilling = () => {
 
@@ -46,6 +47,7 @@ const Monitorbilling = () => {
 
     return (
         <div className="flex h-screen">
+            <Sidebar/>
             <div className="flex-grow bg-gray-100 overflow-auto">
                 <div className="sticky top-0 z-10">
                     <Navbar />

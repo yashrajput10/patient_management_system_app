@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import { IoClose } from 'react-icons/io5';
 import MonitorBill from '../images/monitor bill.png';
 import avtar from '../images/Avatar.png';
+import Sidebar from './Sidebar';
 
 const InsuranceClaims = () => {
 
@@ -21,6 +22,7 @@ const InsuranceClaims = () => {
 
     return (
         <div className="flex h-screen">
+            <Sidebar/>
             <div className="flex-grow bg-gray-100 overflow-auto">
                 <div className="sticky top-0 z-10">
                     <Navbar />

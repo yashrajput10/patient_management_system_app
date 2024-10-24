@@ -22,6 +22,8 @@ import AdminSignup from './components/auth/Admin/AdminSignup';
 import PatientLogin from './components/auth/Patient/PatientLogin';
 import Reportingandanalytics from './components/Dashboard/Reportingandanalytics';
 import Monitorbilling from './components/Dashboard/Monitorbilling';
+import InsuranceClaims from './components/Dashboard/InsuranceClaims';
+import PaymentProcess from './components/Dashboard/PaymentProcess';
 
 
 
@@ -55,7 +57,9 @@ function App() {
           <Route path='/doctormanagement'  Component={DoctorManagement}/>
           <Route  path='/adddoctor' Component={AddDoctor} />
           <Route  path='/reportingandanalytics' Component={Reportingandanalytics} />
-          <Route  path='/monitorbilling' element={Monitorbilling} />
+          <Route  path='/monitorbilling' Component={Monitorbilling} />
+          <Route  path='/insuranceclaims' Component={InsuranceClaims} />
+          <Route  path='/paymentprocess' Component={PaymentProcess} />
           <Route  path='/adddoctor' element={AddDoctor} />
         </Routes>
         <ToastContainer />
