@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import DoctureSidebar from "./DoctureSidebar"; // Assuming you have a sidebar component for the doctor
-import Navbar from "../Dashboard/Navbar"; // Assuming you have a Navbar component
 import { PaperClipIcon } from '@heroicons/react/24/solid'; // Attachment icon
 import { UserIcon } from "@heroicons/react/24/outline"; // User icon for patient avatars
+import Dnavbar from "./Dnavbar";
 
 // Example data for initial patients
 const initialPatients = {
@@ -72,7 +72,7 @@ const DoctureChat = () => {
       <div className="flex-grow overflow-auto">
         {/* Navbar */}
         <div className="sticky top-0 z-10">
-          <Navbar />
+          <Dnavbar />
         </div>
 
         {/* Chat and Patient Selection */}

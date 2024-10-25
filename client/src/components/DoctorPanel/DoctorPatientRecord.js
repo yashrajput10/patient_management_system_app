@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { MdRemoveRedEye } from 'react-icons/md';
 import { FaMale, FaFemale } from 'react-icons/fa';
 import DoctureSidebar from './DoctureSidebar';
-import Navbar from '../Dashboard/Navbar';
+import Dnavbar from './Dnavbar';
 
 const defaultPatients = [
     {
@@ -49,7 +49,7 @@ function DoctorPatientRecord() {
         <div className="flex h-screen">
             <DoctureSidebar />
             <div className="flex flex-col flex-grow">
-                <Navbar />
+                <Dnavbar />
                 <div className="flex-grow p-4 overflow-auto bg-gray-100">
                     <div className="sticky top-0 z-10">
                         <div className="min-h-screen bg-gray-50">

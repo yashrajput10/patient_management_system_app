@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { FaEye, FaSearch } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import DoctureSidebar from "./DoctureSidebar";
-import Navbar from "../Dashboard/Navbar";
-import { FaCalendarDays } from "react-icons/fa6";
-import { LuCalendarClock, LuCalendarX2 } from "react-icons/lu";
+import Dnavbar from "./Dnavbar";
+
 
 const appointments = [
     {
@@ -63,7 +62,7 @@ const PrescriptionToolsManage = () => {
             <DoctureSidebar />
             <div className="flex-grow overflow-auto bg-gray-100">
                 <div className="sticky top-0 z-10">
-                    <Navbar />
+                    <Dnavbar />
                 </div>
                 <div className="flex flex-col h-full">
                     <div className="min-h-screen p-6 bg-gray-100">

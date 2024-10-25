@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import DoctureSidebar from './DoctureSidebar';
-import Navbar from '../Dashboard/Navbar';
 import { EyeIcon } from '@heroicons/react/24/outline';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import Dnavbar from './Dnavbar';
 
 const appointmentsData = [
   { name: 'Jaydon Philips', age: 36, gender: 'Male', type: 'Onsite', time: '10:10 AM', status: 'New', date: new Date('2024-10-19') },
@@ -49,7 +49,7 @@ function Doctorprescriptiontools() {
     <div className="flex h-screen">
       <DoctureSidebar />
       <div className="flex flex-col flex-grow">
-        <Navbar />
+        <Dnavbar />
         <div className="flex-grow p-4 overflow-auto bg-gray-100">
           <div className="p-6 bg-white rounded shadow">
             <div className="flex items-center justify-between mb-4">

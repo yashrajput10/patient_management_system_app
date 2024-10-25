@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaSearch, FaPhone, FaCalendarAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import DoctureSidebar from "./DoctureSidebar";
-import Navbar from "../Dashboard/Navbar";
+import Dnavbar from "./Dnavbar";
 
 const appointments = [
     {
@@ -86,7 +86,7 @@ const DoctorTeleconsultation = () => {
             <DoctureSidebar />
             <div className="flex-grow overflow-auto bg-gray-100">
                 <div className="sticky top-0 z-10">
-                    <Navbar />
+                    <Dnavbar />
                 </div>
                 <div className="flex flex-col h-full">
                     <div className="min-h-screen p-6 bg-gray-100">
