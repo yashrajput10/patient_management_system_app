@@ -37,6 +37,7 @@ import PrescriptionToolsManage from './components/DoctorPanel/PrescriptionToolsM
 import PatientHelthRecord from './components/PatientPanel/PatientHelthRecord';
 import PatientChat from './components/PatientPanel/PatientChat';
 import Reportingandanalytics from './components/Dashboard/Reportingandanalytics';
+import PaymentProcess from './components/Dashboard/PaymentProcess';
 
 
 function App() {
@@ -74,7 +75,10 @@ function App() {
           <Route path='/adddoctor' Component={AddDoctor} />
           <Route path='/createbillform' Component={CreateBillForm} />
           <Route path='/monitorbillingtable' Component={MonitorBilling} />
+          <Route path='/monitorbilling' Component={MonitorBilling} />
           <Route path='/changeinvoiceform' Component={ChangeInvoiceForm} />
+          <Route path='/insuranceclaims' Component={InsuranceClaimsTable} />
+          <Route path='/paymentprocess' Component={PaymentProcess} />
           <Route path='/insuranceclaimstable' Component={InsuranceClaimsTable} />
           <Route path='/billingdetailstable' Component={BillingDetailsTable} />
           <Route path='/reportingandanalytics' Component={Reportingandanalytics} />

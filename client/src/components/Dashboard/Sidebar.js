@@ -110,7 +110,9 @@ const Sidebar = () => {
         <div className="absolute bottom-0 w-100">
           <button className="w-full flex items-center justify-start space-x-2 py-3 text-red-500 bg-red-50 hover:bg-red-100 transition-all duration-300 ps-4 font-bold">
             <IoLogIn className="fs-4" />
+            <Link to='/' className="text-decoration-none text-red-500 bg-red-50 hover:bg-red-100 transition-all duration-300 ps-4 font-bold" >
             <span>Logout</span>
+            </Link>
           </button>
         </div>
       </nav>
