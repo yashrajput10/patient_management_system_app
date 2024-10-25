@@ -1,16 +1,16 @@
 
 import './App.css';
-import { ToastContainer } from 'react-toastify'; // Import ToastContainer and toast
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ForgotPassword from './components/auth/Patient/ForgotPassword';
 import Otp from './components/Signup-Login-Pages/Otp';
 import Dashboard from './components/Dashboard/Dashboard';
-import DoctorDashboard from './components/Dashboard/DoctorDashboard';
+
 import PatientDashboard from './components/Dashboard/PatientDashboard';
-import DoctorManagement from  './components/Dashboard/DoctorManagement';
-import AddDoctor  from './components/Dashboard/AddDoctor';
+import DoctorManagement from './components/Dashboard/DoctorManagement';
+import AddDoctor from './components/Dashboard/AddDoctor';
 import UserProfile from './components/profile/UserProfile';
 import ProfileChnagepassword from './components/profile/ProfileChnagepassword';
 import TermsAndCondition from './components/profile/TermsAndCondition';
@@ -20,13 +20,23 @@ import PatientSignup from './components/auth/Patient/PatientSignup';
 import DoctorLogin from './components/auth/Doctor/DoctorLogin';
 import AdminSignup from './components/auth/Admin/AdminSignup';
 import PatientLogin from './components/auth/Patient/PatientLogin';
+import CreateBillForm from './components/Dashboard/CreateBillForm';
+import MonitorBilling from './components/Dashboard/MonitorBilling';
+import ChangeInvoiceForm from './components/Dashboard/ChangeInvoiceForm';
+import InsuranceClaimsTable from './components/Dashboard/InsuranceClaimsTable';
+import BillingDetailsTable from './components/Dashboard/BillingDetailsTable';
+import FormAddDoctor from './components/Dashboard/FormAddDoctor';
+
+import DoctorsDashboard from './components/DoctorPanel/DoctorsDashboard';
+import DoctureAppointmentManagement from './components/DoctorPanel/DoctureAppointmentManagement';
+import DoctureChat from './components/DoctorPanel/DoctureChat';
+import DoctorTeleconsultation from './components/DoctorPanel/DoctorTeleconsultation';
+import DoctorPatientRecord from './components/DoctorPanel/DoctorPatientRecord';
+import Doctorprescriptiontools from './components/DoctorPanel/Doctorprescriptiontools';
+import PrescriptionToolsManage from './components/DoctorPanel/PrescriptionToolsManage';
+import PatientHelthRecord from './components/PatientPanel/PatientHelthRecord';
+import PatientChat from './components/PatientPanel/PatientChat';
 import Reportingandanalytics from './components/Dashboard/Reportingandanalytics';
-import Monitorbilling from './components/Dashboard/Monitorbilling';
-import InsuranceClaims from './components/Dashboard/InsuranceClaims';
-import PaymentProcess from './components/Dashboard/PaymentProcess';
-
-
-
 
 
 function App() {
@@ -34,33 +44,61 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+
+          {/* Auth */}
           <Route path='/' Component={AdminLogin} />
-          <Route path="/patient/signup" element={PatientSignup} />
-          <Route path="/patient/login" element={PatientLogin} />
+          <Route path="/patient/signup" element={<PatientSignup />} />
+          <Route path="/patient/login" element={<PatientLogin />} />
+
+          <Route path="/doctor/login" element={<DoctorLogin />} />
+
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/signup" element={<AdminSignup />} />
+
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/otp-verification" element={<Otp />} />
+          {/* --- END --- */}
+
+          {/* Profile */}
+          <Route path='/userprofile' Component={UserProfile} />
+          <Route path='/Profile/chnagepassword' Component={ProfileChnagepassword} />
+          <Route path='/Profile/termsandconditions' Component={TermsAndCondition} />
+          <Route path='/Profile/privacypolicy' Component={PrivacyPolicy} />
+          {/* --- END --- */}
+
+          {/* Admin  Dashboard */}
+          <Route path='/dashboard' element={<Dashboard />} />
+          {/* <Route path='/doctordashboard' Component={DoctorDashboard} /> */}
+          <Route path='/patientdashboard' Component={PatientDashboard} />
+          <Route path='/doctormanagement' Component={DoctorManagement} />
+          <Route path='/adddoctor' Component={AddDoctor} />
+          <Route path='/createbillform' Component={CreateBillForm} />
+          <Route path='/monitorbillingtable' Component={MonitorBilling} />
+          <Route path='/changeinvoiceform' Component={ChangeInvoiceForm} />
+          <Route path='/insuranceclaimstable' Component={InsuranceClaimsTable} />
+          <Route path='/billingdetailstable' Component={BillingDetailsTable} />
+          <Route path='/reportingandanalytics' Component={Reportingandanalytics} />
+          <Route path='/formadddoctor' Component={FormAddDoctor} />
+          {/* --- END --- */}
+
+          {/* Docture  Dashboard */}
+          {/* <Route path='/doctor/dashboard' element={<DoctorsDashboard />} /> */}
+          <Route path='/doctor/dashboard' Component={DoctorsDashboard} />
+          <Route path='/doctor/dashboard/appointment/management' element={<DoctureAppointmentManagement />} />
+          <Route path='/doctor/chat' element={<DoctureChat />} />
+          <Route path='/doctor/teleconsultation' element={<DoctorTeleconsultation />} />
+          <Route path='/doctor/patient/record' element={<DoctorPatientRecord />} />
+          <Route path='/doctor/prescription/tools' element={<Doctorprescriptiontools />} />
+          <Route path='/doctor/prescription/tools/manage' element={<PrescriptionToolsManage />} />
+          {/* --- END --- */}
+
+          {/* Patient Dashboard */}
+          <Route path='/patient/helth/record/dashboard' element={<PatientHelthRecord />} />
+          <Route path='/patient/chat' element={<PatientChat />} />
           
-          <Route path="/doctor/login" element={DoctorLogin} />
+          {/* --- END --- */}
 
-          <Route path="/admin/login" element={AdminLogin} />
-          <Route path="/admin/signup" element={AdminSignup} />
 
-          <Route path="/forgot-password" element={ForgotPassword} />
-          <Route path="/otp-verification" element={Otp} />
-          
-          <Route path='userprofile' Component={UserProfile} />    
-          <Route path='Profile/chnagepassword' Component={ProfileChnagepassword} />    
-          <Route path='Profile/termsandconditions' Component={TermsAndCondition} />    
-          <Route path='Profile/privacypolicy' Component={PrivacyPolicy} />    
-
-          <Route path='/dashboard' Component={Dashboard}/>
-          <Route path='/doctordashboard' Component={DoctorDashboard}/>
-          <Route path='/patientdashboard' Component={PatientDashboard}/>
-          <Route path='/doctormanagement'  Component={DoctorManagement}/>
-          <Route  path='/adddoctor' Component={AddDoctor} />
-          <Route  path='/reportingandanalytics' Component={Reportingandanalytics} />
-          <Route  path='/monitorbilling' Component={Monitorbilling} />
-          <Route  path='/insuranceclaims' Component={InsuranceClaims} />
-          <Route  path='/paymentprocess' Component={PaymentProcess} />
-          <Route  path='/adddoctor' element={AddDoctor} />
         </Routes>
         <ToastContainer />
       </BrowserRouter>

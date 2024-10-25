@@ -68,12 +68,12 @@ export default function Navbar() {
                 All </li></Link> 
             
                    
-                        <Link to="/doctordashboard" className='text-decoration-none text-gray-500 hover:text-white'>
+                        <Link to="/doctor/dashboard" className='text-decoration-none text-gray-500 hover:text-white'>
                         <li className="hover:bg-[#0EABEB] cursor-pointer p-2 ps-3">
                         Doctor </li></Link> 
                     
 
-                    <Link to="/patientdashboard" className='text-decoration-none text-gray-500 hover:text-white'>
+                    <Link to="/patient/helth/record/dashboard" className='text-decoration-none text-gray-500 hover:text-white'>
                     <li className="hover:bg-[#0EABEB] cursor-pointer p-2 ps-3">
                     Patient  </li></Link> 
                
