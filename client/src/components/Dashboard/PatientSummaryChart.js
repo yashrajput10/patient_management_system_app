@@ -11,14 +11,14 @@ const PatientSummaryChart = () => {
     datasets: [
       {
         label: 'New Patient',
-        data: [10, 20, 15, 30, 25, 35, 40],
+        data: [15, 20, 40, 80, 90, 75, 65],
         borderColor: '#F7BC91',
         backgroundColor: '#F7BC91',
         fill: true,
       },
       {
         label: 'Old Patient',
-        data: [5, 10, 15, 20, 30, 25, 20],
+        data: [80, 10, 90, 40, 20, 85, 45],
         borderColor: 'rgba(156, 171, 255, 1)',
         backgroundColor: '#9CABFF',
         fill: true,
