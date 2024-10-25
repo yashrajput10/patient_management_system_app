@@ -4,12 +4,12 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 
 // Static data for the chart
 const data = [
-    { name: '0-2 Years', value: 40, color: '#B9459F' },  
-    { name: '3-12 Years', value: 50, color: '#3D429F' },  
-    { name: '13-19 Years', value: 120, color: '#4683A5' }, 
-    { name: '20-39 Years', value: 70, color: '#E3B340' }, 
-    { name: '40-59 Years', value: 80, color: '#389486' }, 
-    { name: '60 And Above', value: 150, color: '#CA7C67' }, 
+    { name: '0-2 Years', value: 40, color: '#B9459F' },
+    { name: '3-12 Years', value: 50, color: '#3D429F' },
+    { name: '13-19 Years', value: 120, color: '#4683A5' },
+    { name: '20-39 Years', value: 70, color: '#E3B340' },
+    { name: '40-59 Years', value: 80, color: '#389486' },
+    { name: '60 And Above', value: 150, color: '#CA7C67' },
 ];
 
 // Calculate total value
@@ -53,10 +53,13 @@ export default function PatientAge() {
                     {data.map((entry, index) => (
                         <div key={index} className="flex items-center justify-between mb-2">
                             <span className="text-gray-500 text-md text-dark fw-semibold flex pe-3">
-                                <GoDotFill className={`text-[${entry.color}] mt-1 me-1 fs-6`} />
+                                <GoDotFill style={{ color: entry.color }} className="mt-1 me-1 fs-6"  />
                                 {entry.name}
                             </span>
-                            <span className={`text-[${entry.color}] font-bold`}>
+                            <span
+                                className="font-bold"
+                                style={{ color: entry.color }}
+                            >
                                 {((entry.value / totalValue) * 100).toFixed(1)}%
                             </span>
                         </div>
