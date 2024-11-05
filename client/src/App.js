@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ForgotPassword from './components/auth/Patient/ForgotPassword';
 import Otp from './components/Signup-Login-Pages/Otp';
 import Dashboard from './components/Dashboard/Dashboard';
-
+import DoctorDashboard from './components/Dashboard/DoctorDashboard';
 import PatientDashboard from './components/Dashboard/PatientDashboard';
 import DoctorManagement from './components/Dashboard/DoctorManagement';
 import AddDoctor from './components/Dashboard/AddDoctor';
@@ -25,9 +25,8 @@ import MonitorBilling from './components/Dashboard/MonitorBilling';
 import ChangeInvoiceForm from './components/Dashboard/ChangeInvoiceForm';
 import InsuranceClaimsTable from './components/Dashboard/InsuranceClaimsTable';
 import BillingDetailsTable from './components/Dashboard/BillingDetailsTable';
+import { ReportingDashboard } from './components/Dashboard/ReportingDashboard';
 import FormAddDoctor from './components/Dashboard/FormAddDoctor';
-
-import DoctorsDashboard from './components/DoctorPanel/DoctorsDashboard';
 import DoctureAppointmentManagement from './components/DoctorPanel/DoctureAppointmentManagement';
 import DoctureChat from './components/DoctorPanel/DoctureChat';
 import DoctorTeleconsultation from './components/DoctorPanel/DoctorTeleconsultation';
@@ -36,8 +35,10 @@ import Doctorprescriptiontools from './components/DoctorPanel/Doctorprescription
 import PrescriptionToolsManage from './components/DoctorPanel/PrescriptionToolsManage';
 import PatientHelthRecord from './components/PatientPanel/PatientHelthRecord';
 import PatientChat from './components/PatientPanel/PatientChat';
-import Reportingandanalytics from './components/Dashboard/Reportingandanalytics';
-import PaymentProcess from './components/Dashboard/PaymentProcess';
+import PatientAppointmentBooking from './components/PatientPanel/PatientAppointmentBooking';
+import PationTeleconsultation from './components/PatientPanel/PationTeleconsultation';
+import PationBill from './components/PatientPanel/PationBill';
+import PrescriptionAccess from './components/PatientPanel/PrescriptionAccess';
 
 
 function App() {
@@ -69,25 +70,22 @@ function App() {
 
           {/* Admin  Dashboard */}
           <Route path='/dashboard' element={<Dashboard />} />
-          {/* <Route path='/doctordashboard' Component={DoctorDashboard} /> */}
+          <Route path='/doctordashboard' Component={DoctorDashboard} />
           <Route path='/patientdashboard' Component={PatientDashboard} />
           <Route path='/doctormanagement' Component={DoctorManagement} />
           <Route path='/adddoctor' Component={AddDoctor} />
           <Route path='/createbillform' Component={CreateBillForm} />
           <Route path='/monitorbillingtable' Component={MonitorBilling} />
-          <Route path='/monitorbilling' Component={MonitorBilling} />
           <Route path='/changeinvoiceform' Component={ChangeInvoiceForm} />
-          <Route path='/insuranceclaims' Component={InsuranceClaimsTable} />
-          <Route path='/paymentprocess' Component={PaymentProcess} />
           <Route path='/insuranceclaimstable' Component={InsuranceClaimsTable} />
           <Route path='/billingdetailstable' Component={BillingDetailsTable} />
-          <Route path='/reportingandanalytics' Component={Reportingandanalytics} />
+          <Route path='/reportingdashboard' Component={ReportingDashboard} />
           <Route path='/formadddoctor' Component={FormAddDoctor} />
           {/* --- END --- */}
 
           {/* Docture  Dashboard */}
           {/* <Route path='/doctor/dashboard' element={<DoctorsDashboard />} /> */}
-          <Route path='/doctor/dashboard' Component={DoctorsDashboard} />
+          <Route path='/doctor/dashboard' element={<DoctureAppointmentManagement />} />
           <Route path='/doctor/dashboard/appointment/management' element={<DoctureAppointmentManagement />} />
           <Route path='/doctor/chat' element={<DoctureChat />} />
           <Route path='/doctor/teleconsultation' element={<DoctorTeleconsultation />} />
@@ -99,7 +97,10 @@ function App() {
           {/* Patient Dashboard */}
           <Route path='/patient/helth/record/dashboard' element={<PatientHelthRecord />} />
           <Route path='/patient/chat' element={<PatientChat />} />
-          
+          <Route path='/patient/appointment/booking' element={<PatientAppointmentBooking />} />
+          <Route path='/patient/teleconsultation' element={<PationTeleconsultation /> }/>
+          <Route path='/patient/bills' element={<PationBill />} />
+          <Route path='/patient/access' element={<PrescriptionAccess />} />
           {/* --- END --- */}
 
 

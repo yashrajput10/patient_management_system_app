@@ -81,7 +81,7 @@ const PatientSidebar = () => {
             <li className="flex items-center py-3 pl-8 space-x-4 text-gray-600 transition-all duration-300 cursor-pointer hover:bg-blue-100 hover:text-blue-500">
               <AiOutlineEdit className="text-gray-600" />
               <Link
-                to="/patient/teleconsultation"
+                to="/patient/access"
                 className="text-gray-500 no-underline"
               >
                 <span>Prescription Access</span>
@@ -115,6 +115,13 @@ const PatientSidebar = () => {
               </Link>
             </li>
           </ul>
+
+          <div className="absolute flex justify-center w-full mb-5 bottom-5">
+            <img
+              src="/../patient.png"
+              alt="Admin Registration"
+            />
+          </div>
 
           {/* Logout Button */}
           <div className="absolute bottom-0 w-full">
