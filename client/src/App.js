@@ -21,7 +21,6 @@ import DoctorLogin from './components/auth/Doctor/DoctorLogin';
 import AdminSignup from './components/auth/Admin/AdminSignup';
 import PatientLogin from './components/auth/Patient/PatientLogin';
 import CreateBillForm from './components/Dashboard/CreateBillForm';
-import MonitorBilling from './components/Dashboard/MonitorBilling';
 import ChangeInvoiceForm from './components/Dashboard/ChangeInvoiceForm';
 import InsuranceClaimsTable from './components/Dashboard/InsuranceClaimsTable';
 import BillingDetailsTable from './components/Dashboard/BillingDetailsTable';
@@ -41,6 +40,7 @@ import PationBill from './components/PatientPanel/PationBill';
 import PrescriptionAccess from './components/PatientPanel/PrescriptionAccess';
 import PaymentProcess from './components/Dashboard/PaymentProcess';
 import Reportingandanalytics from './components/Dashboard/Reportingandanalytics';
+import MonitorBilling from './components/Dashboard/Monitorbilling';
 
 
 function App() {
