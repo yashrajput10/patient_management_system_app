@@ -39,6 +39,8 @@ import PatientAppointmentBooking from './components/PatientPanel/PatientAppointm
 import PationTeleconsultation from './components/PatientPanel/PationTeleconsultation';
 import PationBill from './components/PatientPanel/PationBill';
 import PrescriptionAccess from './components/PatientPanel/PrescriptionAccess';
+import PaymentProcess from './components/Dashboard/PaymentProcess';
+import Reportingandanalytics from './components/Dashboard/Reportingandanalytics';
 
 
 function App() {
@@ -75,12 +77,13 @@ function App() {
           <Route path='/doctormanagement' Component={DoctorManagement} />
           <Route path='/adddoctor' Component={AddDoctor} />
           <Route path='/createbillform' Component={CreateBillForm} />
-          <Route path='/monitorbillingtable' Component={MonitorBilling} />
+          <Route path='/monitorbilling' Component={MonitorBilling} />
           <Route path='/changeinvoiceform' Component={ChangeInvoiceForm} />
-          <Route path='/insuranceclaimstable' Component={InsuranceClaimsTable} />
+          <Route path='/insuranceclaims' Component={InsuranceClaimsTable} />
           <Route path='/billingdetailstable' Component={BillingDetailsTable} />
-          <Route path='/reportingdashboard' Component={ReportingDashboard} />
-          <Route path='/formadddoctor' Component={FormAddDoctor} />
+          <Route path='/reportingandanalytics' Component={Reportingandanalytics} />
+          <Route path='/paymentprocess' Component={PaymentProcess} />
+
           {/* --- END --- */}
 
           {/* Docture  Dashboard */}
