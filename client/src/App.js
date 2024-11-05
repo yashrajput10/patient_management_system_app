@@ -40,7 +40,7 @@ import PationBill from './components/PatientPanel/PationBill';
 import PrescriptionAccess from './components/PatientPanel/PrescriptionAccess';
 import PaymentProcess from './components/Dashboard/PaymentProcess';
 import Reportingandanalytics from './components/Dashboard/Reportingandanalytics';
-import MonitorBilling from './components/Dashboard/Monitorbilling';
+import MonitorBilling from './components/Dashboard/MonitorBilling';
 
 
 function App() {
