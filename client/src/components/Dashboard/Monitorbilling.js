@@ -3,7 +3,7 @@ import MonitorBillingTable from "./MonitorBillingTable";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 
-const MonitorBilling = () => {
+const Monitorbilling = () => {
     return (
         <div className="flex h-screen">
             <Sidebar />
@@ -17,4 +17,4 @@ const MonitorBilling = () => {
     );
 };
 
-export default MonitorBilling;
+export default Monitorbilling;
